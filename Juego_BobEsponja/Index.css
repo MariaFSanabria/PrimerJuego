@@ -1,0 +1,69 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.beggining{
+color:green;
+
+}
+
+.loose{
+    color:red;
+}
+
+
+.Background{ 
+    background-color: rgb(154, 248, 255);
+}
+
+#game{
+    margin-left: 10px;
+    width: 1000px;
+    height: 400px;
+    border-bottom: 8px solid rgb(194, 172, 149);
+}
+hr{
+    border-bottom: 50px dashed white;
+    color: cadetblue;
+    padding-top: 50px;
+    
+}
+#character{
+    width: 30px;
+    height: 70px;
+    /*background-color: gray;*/
+    position: relative;
+    top: 230px;
+
+
+}
+
+.jump{
+    animation: jump 0.5s;
+}
+
+#obstacle{
+    width: 30px;
+    height: 35px;
+    position: relative;
+    top: 229px;
+    left: 980px;
+}
+
+@keyframes obstacleMovement{
+    0%{left: 980px;}
+    100%{
+        left: -980px;
+        
+    }
+}
+
+@keyframes jump{
+    0%{top: 230px;}
+    50%{top: 180px;}
+    70%{top: 180;}
+    100%{top: 230px;}
+}
+
